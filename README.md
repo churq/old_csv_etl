@@ -16,7 +16,9 @@ For this example I have utilised ...
 
 - Language: Python 3.5
 - Operative System: macOS sierra
-- Modules/Libraries: Please refer to the conf, requirements and setup files.
+- Modules/Libraries: Please refer to the conf, requirements.txt and setup files.
+
+----
 
 # Notes:
 
@@ -28,7 +30,6 @@ This projects does not aim to cover best practices for Python project
 development as a whole. For example, it does not provide guidance or tool
 recommendations for version control, documentation, or testing.
 
-----
 
 This is the README file for the project.
 
