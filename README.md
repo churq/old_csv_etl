@@ -2,7 +2,7 @@
 
 This is just a very basic example to work around the different ways to create an ETL tool in Python.
 
-# Example Project Instructions:
+# Instructions:
 - CSV file will contain user data and have three columns: name, surname, email
 - CSV file will have an arbitrary list of users
 - Name and surname field should be set to be capitalised e.g. from “john” to “John”
