@@ -1,9 +1,5 @@
 import csv
 
-"""
-Read CSV file
-"""
-
 csv.register_dialect(
     'CSV_reader',
     delimiter=',',
@@ -14,26 +10,15 @@ csv.register_dialect(
     quoting=csv.QUOTE_MINIMAL)
 
 
-def csv_reader(file):
-    csv_object = csv.reader(file, dialect='CSV_reader')
-    next(csv_object, None)
-    names = []
-    surnames = []
-    emails = []
-    for column in csv_object:
-        name = column[0].replace('!', '').strip().title()
-        surname = column[1].replace('!', '').strip().title()
-        email = column[2].replace('!', '').strip().lower()
-
-        names.append(name)
-        surnames.append(surname)
-        emails.append(email)
-
-        output = name + "\t \t" + surname + "\t \t" + email
-
-        print(output)
+def csv_dict_reader(file):
+    reader = csv.DictReader(file, dialect='CSV_reader')
+    for line in reader:
+        print(''.join(c for c in line["name"].title() + "\t \t" +
+                      line["surname"].title() + "\t \t" +
+                      line["email"].lower()
+                      if c not in '/><=+-?!#"  "$%^&*""()" "_+:;'))
 
 
 if __name__ == "__main__":
-    with open("data/users.csv") as f:
-        csv_reader(f)
+    with open('data/users.csv') as f:
+        csv_dict_reader(f)
