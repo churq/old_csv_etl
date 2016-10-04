@@ -1,8 +1,9 @@
 # Overview:
 
-This is just a very basic example to work around the different ways to create an ETL tool in Python.
+This is just a very *very basic* example to work around the different
+ways to create an ETL tool in Python.
 
-# Instructions:
+### Instructions:
 
 - CSV file will contain user data and have three columns: name, surname, email
 
@@ -14,7 +15,7 @@ This is just a very basic example to work around the different ways to create an
 
 - The script should validate the email address to make sure that it is valid (valid means that it is a legal email format e.g. “xxxx@asdf@asdf is not a legal format). In the instance that an email is invalid an error message will be reported to STDOUT
 
-# Technical Notes:
+### Technical Notes:
 
 For this example I have utilised ...
 
@@ -26,7 +27,7 @@ For this example I have utilised ...
 
 ----
 
-## Notes:
+##### Notes:
 
 A sample project that exists as an aid to the 'Python Packaging User Guide
 <https://packaging.python.org>'_'s 'Tutorial on Packaging and Distributing
