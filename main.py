@@ -14,13 +14,13 @@ csv.register_dialect(
     quoting=csv.QUOTE_MINIMAL)
 
 
-def csv_reader(read):
-    input_file = csv.reader(read, dialect='CSV_reader')
-    next(input_file, None)
+def csv_reader(file):
+    csv_object = csv.reader(file, dialect='CSV_reader')
+    next(csv_object, None)
     names = []
     surnames = []
     emails = []
-    for column in input_file:
+    for column in csv_object:
         name = column[0].replace('!', '').strip().title()
         surname = column[1].replace('!', '').strip().title()
         email = column[2].replace('!', '').strip().lower()
