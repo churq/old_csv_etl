@@ -27,6 +27,8 @@ For this example I have utilised ...
 - Modules/Libraries: Please refer to the conf, requirements.txt and
   setup files.
 
+- PyCharm IDE
+
 ----
 
 >Notes:
