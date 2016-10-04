@@ -10,7 +10,7 @@ csv.register_dialect(
     quoting=csv.QUOTE_MINIMAL)
 
 
-def csv_dict_reader(file):
+def csv_reader(file):
     reader = csv.DictReader(file, dialect='CSV_reader')
     for line in reader:
         print(''.join(c for c in
@@ -22,4 +22,4 @@ def csv_dict_reader(file):
 
 if __name__ == "__main__":
     with open('data/users.csv') as f:
-        csv_dict_reader(f)
+        csv_reader(f)
