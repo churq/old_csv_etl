@@ -31,6 +31,14 @@ For this example I have utilised ...
 
 - PyCharm IDE
 
+### Instructions:
+
+- TODO...
+
+### Workflow:
+
+- TODO...
+
 ----
 
 >Notes:
