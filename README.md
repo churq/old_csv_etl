@@ -1,7 +1,7 @@
 # Overview:
 
-This is just a very *very basic* example to work around the different
-ways to create an ETL tool in Python.
+This is just a *very basic* example to work around the different ways to
+create an ETL tool in Python 3.5 and it's csv module.
 
 ### Specs:
 
