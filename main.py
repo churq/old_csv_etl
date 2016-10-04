@@ -4,8 +4,6 @@ import csv
 Read CSV file
 """
 
-import csv
-
 csv.register_dialect(
     'CSV_reader',
     delimiter=',',
@@ -15,8 +13,9 @@ csv.register_dialect(
     lineterminator='\r\n',
     quoting=csv.QUOTE_MINIMAL)
 
-with open('data/users.csv') as csvfile:
-    input_file = csv.reader(csvfile, dialect='CSV_reader')
+
+def csv_reader(read):
+    input_file = csv.reader(read, dialect='CSV_reader')
     next(input_file, None)
     names = []
     surnames = []
@@ -33,3 +32,8 @@ with open('data/users.csv') as csvfile:
         output = name + "\t \t" + surname + "\t \t" + email
 
         print(output)
+
+
+if __name__ == "__main__":
+    with open("data/users.csv") as f:
+        csv_reader(f)
