@@ -13,7 +13,8 @@ csv.register_dialect(
 def csv_dict_reader(file):
     reader = csv.DictReader(file, dialect='CSV_reader')
     for line in reader:
-        print(''.join(c for c in line["name"].title() + "\t \t" +
+        print(''.join(c for c in
+                      line["name"].title() + "\t \t" +
                       line["surname"].title() + "\t \t" +
                       line["email"].lower()
                       if c not in '/><=+-?!#"  "$%^&*""()" "_+:;'))
