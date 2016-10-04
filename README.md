@@ -9,6 +9,9 @@ This is just a very basic example to work around the different ways to create an
 - Emails need to be set to be lower case
 - The script should validate the email address to make sure that it is valid (valid means that it is a legal email format e.g. “xxxx@asdf@asdf is not a legal format). In the instance that an email is invalid an error message will be reported to STDOUT
 
+# Technical Specs:
+- Language: Python 3.5
+- Operative System: macOS sierra
 
 # Notes:
 
