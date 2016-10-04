@@ -5,15 +5,15 @@ create an ETL tool in Python 3.5 and it's csv module.
 
 ### Specs:
 
-- CSV file will contain user data and have three columns: name, surname, email
+1. CSV file will contain user data and have three columns: name, surname, email
 
-- CSV file will have an arbitrary list of users
+2. CSV file will have an arbitrary list of users
 
-- Name and surname field should be set to be capitalised e.g. from “john” to “John”
+2. Name and surname field should be set to be capitalised e.g. from “john” to “John”
 
-- Emails need to be set to be lower case
+3. Emails need to be set to be lower case
 
-- The script should validate the email address to make sure that it is valid (valid means that it is a legal email format e.g. “xxxx@asdf@asdf is not a legal format). In the instance that an email is invalid an error message will be reported to STDOUT
+4. The script should validate the email address to make sure that it is valid (valid means that it is a legal email format e.g. “xxxx@asdf@asdf is not a legal format). In the instance that an email is invalid an error message will be reported to STDOUT
 
 ### Technical Notes:
 
