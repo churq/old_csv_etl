@@ -21,9 +21,11 @@ For this example I have utilised ...
 
 - Language: Python 3.5
 
-- Operative System: macOS sierra
+- Operative System: macOS sierra, also it works for any Linux/Unix based
+  distribution.
 
-- Modules/Libraries: Please refer to the conf, requirements.txt and setup files.
+- Modules/Libraries: Please refer to the conf, requirements.txt and
+  setup files.
 
 ----
 
