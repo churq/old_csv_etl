@@ -3,7 +3,7 @@
 This is just a very *very basic* example to work around the different
 ways to create an ETL tool in Python.
 
-### Instructions:
+### Specs:
 
 - CSV file will contain user data and have three columns: name, surname, email
 
