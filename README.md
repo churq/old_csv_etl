@@ -1,4 +1,4 @@
-# Background and Overview:
+# Overview:
 
 This is just a very basic example to work around the different ways to create an ETL tool in Python.
 
