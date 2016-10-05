@@ -1,4 +1,5 @@
 import csv
+import re
 
 csv.register_dialect(
     'CSV_reader',
@@ -12,12 +13,13 @@ csv.register_dialect(
 
 def csv_reader(file):
     reader = csv.DictReader(file, dialect='CSV_reader')
+    word_char_pattern = re.compile(r'\w|@|\s+', re.IGNORECASE)
     for line in reader:
         print(''.join(c for c in
                       line["name"].title() + "\t \t" +
                       line["surname"].title() + "\t \t" +
                       line["email"].lower()
-                      if c not in '/><=+-?!#"  "$%^&*""()" "_+:;'))
+                      if bool(word_char_pattern.match(c))))
 
 
 if __name__ == "__main__":
